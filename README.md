@@ -5,9 +5,11 @@ Smart Income Protection System for Delivery Workers Problem Statement Delivery w
 Our Objective the goal is to create an AI-powered insurance platform that automatically protects the income of delivery workers when disruptions happen. 
 
 Our Target Persona Food delivery partners (Swiggy/Zomato) 
-
--Like how much they Work daily for income 
+- Like how much they Work daily for income 
 - How much they get affected by weather and environmental conditions
+- Sudden income loss
+- Insurance for daily wages
+- Predictive support system
   
 System workflow: 
 - The user registrations  on the platforms 
@@ -17,11 +19,14 @@ System workflow:
 - An instant payout is sent to the user
   
 Weekly Pricing Model: 
+
 The premium is calculated weekly which is based on:
 - Location (whether it is rain-prone or not)
 - Historical weather data
-  Example: - Low-risk area → ₹20/week
-           - High-risk area → ₹50/week
+  Example:
+  - Low-risk area → ₹20/week
+  
+   - High-risk area → ₹50/week
   
 Parametric Triggers
  Automatic payouts occur when:
@@ -42,6 +47,18 @@ Tech Stack
 - Database: MySQL
 - AI/ML: Python (basic models)
 - APIs: Weather API
+
+Market Crash Handling
+  
+  In scenarios where large-scale disruptions occur (e.g., continuous rain for a week):
+  
+  AI predicts high claim volume in advance
+  
+  Premium dynamically adjusts for upcoming weeks
+  
+  Risk is distributed across users
+  
+  Simulated insurer reserve ensures payout stability
   
 Key Features
 - Easy onboarding
